@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.7af6f7e6.css" as="style"><link rel="preload" href="/assets/js/app.5f9b5d8c.js" as="script"><link rel="preload" href="/assets/js/2.81c34002.js" as="script"><link rel="preload" href="/assets/js/1.4844e13f.js" as="script"><link rel="preload" href="/assets/js/23.09cb5e13.js" as="script"><link rel="prefetch" href="/assets/js/10.3855f2a7.js"><link rel="prefetch" href="/assets/js/11.532fb960.js"><link rel="prefetch" href="/assets/js/12.9b03ab98.js"><link rel="prefetch" href="/assets/js/13.d9bc12e0.js"><link rel="prefetch" href="/assets/js/14.c1e18cc4.js"><link rel="prefetch" href="/assets/js/15.fbba562b.js"><link rel="prefetch" href="/assets/js/16.4574fd2a.js"><link rel="prefetch" href="/assets/js/17.9e69dfdb.js"><link rel="prefetch" href="/assets/js/18.99e6bfc2.js"><link rel="prefetch" href="/assets/js/19.58d0e401.js"><link rel="prefetch" href="/assets/js/20.0795a904.js"><link rel="prefetch" href="/assets/js/21.4d2eb33f.js"><link rel="prefetch" href="/assets/js/22.aca09b91.js"><link rel="prefetch" href="/assets/js/24.a05968ae.js"><link rel="prefetch" href="/assets/js/25.91cca086.js"><link rel="prefetch" href="/assets/js/3.244f0799.js"><link rel="prefetch" href="/assets/js/4.db06a48d.js"><link rel="prefetch" href="/assets/js/5.caca6451.js"><link rel="prefetch" href="/assets/js/6.963cb6f5.js"><link rel="prefetch" href="/assets/js/7.f5c742a4.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.cc58001a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7af6f7e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h1> <p>本章节将指导你如何安装和配置 Apipseach 平台。</p> <h2 id="系统要求"><a href="#系统要求" class="header-anchor">#</a> 系统要求</h2> <ul><li>Node.js 14.0 或更高版本</li> <li>npm 6.0 或更高版本</li> <li>MongoDB 4.0 或更高版本</li> <li>Elasticsearch 7.0 或更高版本</li></ul> <h2 id="从源码安装"><a href="#从源码安装" class="header-anchor">#</a> 从源码安装</h2> <h3 id="_1-克隆仓库"><a href="#_1-克隆仓库" class="header-anchor">#</a> 1. 克隆仓库</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> clone https://github.com/yourusername/apipseach.git
+<span class="token builtin class-name">cd</span> apipseach
+</code></pre></div><h3 id="_2-安装依赖"><a href="#_2-安装依赖" class="header-anchor">#</a> 2. 安装依赖</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span>
+</code></pre></div><h3 id="_3-配置环境变量"><a href="#_3-配置环境变量" class="header-anchor">#</a> 3. 配置环境变量</h3> <p>创建 <code>.env</code> 文件并添加以下配置：</p> <div class="language- extra-class"><pre class="language-text"><code># MongoDB 连接字符串
+MONGODB_URI=mongodb://localhost:27017/apipseach
+
+# Elasticsearch 连接字符串
+ELASTICSEARCH_URI=http://localhost:9200
+
+# 服务器配置
+PORT=3000
+HOST=0.0.0.0
+
+# 用于 JWT 签名的密钥
+JWT_SECRET=your-secret-key
+</code></pre></div><h3 id="_4-启动服务"><a href="#_4-启动服务" class="header-anchor">#</a> 4. 启动服务</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 开发模式</span>
+<span class="token function">npm</span> run dev
+
+<span class="token comment"># 生产模式</span>
+<span class="token function">npm</span> run build
+<span class="token function">npm</span> start
+</code></pre></div><h2 id="使用-docker-安装"><a href="#使用-docker-安装" class="header-anchor">#</a> 使用 Docker 安装</h2> <h3 id="_1-拉取镜像"><a href="#_1-拉取镜像" class="header-anchor">#</a> 1. 拉取镜像</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker</span> pull apipseach/apipseach:latest
+</code></pre></div><h3 id="_2-运行容器"><a href="#_2-运行容器" class="header-anchor">#</a> 2. 运行容器</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token punctuation">\</span>
+  <span class="token parameter variable">--name</span> apipseach <span class="token punctuation">\</span>
+  <span class="token parameter variable">-p</span> <span class="token number">3000</span>:3000 <span class="token punctuation">\</span>
+  <span class="token parameter variable">-e</span> <span class="token assign-left variable">MONGODB_URI</span><span class="token operator">=</span>mongodb://mongo:27017/apipseach <span class="token punctuation">\</span>
+  <span class="token parameter variable">-e</span> <span class="token assign-left variable">ELASTICSEARCH_URI</span><span class="token operator">=</span>http://elasticsearch:9200 <span class="token punctuation">\</span>
+  <span class="token parameter variable">--link</span> mongo:mongo <span class="token punctuation">\</span>
+  <span class="token parameter variable">--link</span> elasticsearch:elasticsearch <span class="token punctuation">\</span>
+  apipseach/apipseach:latest
+</code></pre></div><h2 id="验证安装"><a href="#验证安装" class="header-anchor">#</a> 验证安装</h2> <p>打开浏览器访问 <code>http://localhost:3000</code>，如果看到 Apipseach 的欢迎页面，则说明安装成功。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5f9b5d8c.js" defer></script><script src="/assets/js/2.81c34002.js" defer></script><script src="/assets/js/1.4844e13f.js" defer></script><script src="/assets/js/23.09cb5e13.js" defer></script>
+  </body>
+</html>

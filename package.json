@@ -2,23 +2,21 @@
   "name": "apipseach-docs",
   "version": "1.0.0",
   "description": "Apipseach 官网兼文档站点",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs --dest ./html"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs && xcopy docs\\.vitepress\\dist\\* html\\* /E /Y",
+    "preview": "vitepress preview docs"
   },
   "keywords": [
-    "vuepress",
+    "vitepress",
     "docs",
     "apipseach"
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "vuepress": "^1.9.10",
-    "vuepress-theme-hope": "^1.30.0"
-  },
   "devDependencies": {
-    "chalk": "^2.4.2"
+    "@rollup/rollup-win32-x64-msvc": "^4.59.0",
+    "vitepress": "^1.0.0"
   }
 }

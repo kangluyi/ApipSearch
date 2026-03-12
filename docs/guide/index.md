@@ -4,8 +4,8 @@
 
 ## 目录
 
-- [安装](installation.html)
-- [快速开始](quick-start.html)
+- [安装](./installation.md)
+- [快速开始](./quick-start.md)
 
 ## 什么是 Apipseach？
 

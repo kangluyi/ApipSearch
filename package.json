@@ -1,0 +1,21 @@
+{
+  "name": "apipseach-docs",
+  "version": "1.0.0",
+  "description": "Apipseach 官网兼文档站点",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "keywords": [
+    "vuepress",
+    "docs",
+    "apipseach"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.9.10",
+    "vuepress-theme-hope": "^1.30.0"
+  }
+}

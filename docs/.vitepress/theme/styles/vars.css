@@ -1,0 +1,51 @@
+:root {
+  /* 红色主题 - 主色 */
+  --vp-c-brand-1: #e54e4e;
+  --vp-c-brand-2: #c13b3b;
+  --vp-c-brand-3: #a32b2b;
+  --vp-c-brand-soft: rgba(229, 78, 78, 0.14);
+  
+  /* 红色主题 - 辅助色 */
+  --vp-c-brand-light: #f06a6a;
+  --vp-c-brand-lighter: #f9b3b3;
+  --vp-c-brand-dark: #b33b3b;
+  --vp-c-brand-darker: #8a2b2b;
+  
+  /* 自定义红色强调色 */
+  --vp-custom-block-tip-border: var(--vp-c-brand-1);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  
+  /* 按钮颜色 */
+  --vp-button-brand-border: var(--vp-c-brand-2);
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-border: var(--vp-c-brand-3);
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: var(--vp-c-brand-3);
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-3);
+  
+  /* 链接颜色 */
+  --vp-c-link: var(--vp-c-brand-1);
+  --vp-c-link-hover: var(--vp-c-brand-2);
+  
+  /* 徽章颜色 */
+  --vp-badge-info-border: var(--vp-c-brand-2);
+  --vp-badge-info-text: var(--vp-c-brand-darker);
+  --vp-badge-info-bg: var(--vp-c-brand-soft);
+}
+
+/* 深色模式下的红色主题 */
+.dark {
+  --vp-c-brand-1: #f06a6a;
+  --vp-c-brand-2: #e54e4e;
+  --vp-c-brand-3: #c13b3b;
+  --vp-c-brand-soft: rgba(240, 106, 106, 0.16);
+  
+  --vp-c-brand-light: #f9b3b3;
+  --vp-c-brand-lighter: #fcd7d7;
+  --vp-c-brand-dark: #c13b3b;
+  --vp-c-brand-darker: #a32b2b;
+}

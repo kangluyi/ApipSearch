@@ -58,5 +58,19 @@ export default {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present Apipseach'
     }
+  },
+  
+  // 自定义主题颜色 - 红色主题
+  appearance: true,  // 启用深色模式支持
+  
+  // 自定义CSS变量
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "./.vitepress/theme/styles/vars.css";`
+        }
+      }
+    }
   }
 }

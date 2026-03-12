@@ -1,6 +1,6 @@
 # 指南
 
-欢迎使用 Apipseach 指南。本指南将帮助你快速上手 Apipseach 平台。
+欢迎使用 Apipseach
 
 ## 目录
 

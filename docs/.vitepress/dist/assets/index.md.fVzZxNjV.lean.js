@@ -1,1 +1,0 @@
-import{_ as a,o as s,c as i,ae as t}from"./chunks/framework.EHGTsUvI.js";const v=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"page"},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),d={name:"index.md"};function c(r,e,n,o,p,l){return s(),i("div",null,[...e[0]||(e[0]=[t("",1)])])}const h=a(d,[["render",c]]);export{v as __pageData,h as default};

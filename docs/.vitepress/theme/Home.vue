@@ -1,18 +1,5 @@
 <template>
   <div class="home-container">
-    <!-- 导航 -->
-    <nav>
-      <a href="#" class="logo">
-        <i class="fa-solid fa-network-wired"></i>
-        <span>APIP SEARCH</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#features">功能特性</a></li>
-        <li><a href="#api">API文档</a></li>
-        <li><a href="#pricing">定价</a></li>
-        <li><a href="#github">GitHub</a></li>
-      </ul>
-    </nav>
 
     <!-- 主视觉 -->
     <section class="hero">
@@ -240,26 +227,6 @@
         </div>
       </div>
     </section>
-
-    <!-- 页脚 -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <i class="fa-solid fa-network-wired"></i>
-          <span>APIP SEARCH</span>
-        </div>
-        <ul class="footer-links">
-          <li><a href="#">服务条款</a></li>
-          <li><a href="#">隐私政策</a></li>
-          <li><a href="#">状态监控</a></li>
-          <li><a href="#">联系我们</a></li>
-        </ul>
-        <p class="copyright">
-          © 2026 Apip Search Project. Open Source under MIT License.<br>
-          <span style="font-size: 0.8em; opacity: 0.5;">Designed for developers, by developers.</span>
-        </p>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -372,55 +339,7 @@ body {
   overflow-x: hidden;
 }
 
-/* 导航栏 */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1.5rem 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-red);
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-.logo i {
-  color: var(--primary-red);
-  font-size: 2rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-}
-
-.nav-links a {
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.nav-links a:hover {
-  color: var(--primary-red);
-}
 
 /* 主视觉区域 - 超大字体 */
 .hero {
@@ -837,62 +756,10 @@ nav {
   color: var(--primary-red);
 }
 
-/* 页脚 */
-footer {
-  padding: 4rem 5% 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
-}
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.footer-logo i {
-  color: var(--primary-red);
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-  list-style: none;
-}
-
-.footer-links a {
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: var(--primary-red);
-}
-
-.copyright {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 0.875rem;
-  margin-top: 2rem;
-}
 
 /* 响应式 */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
   .demo-container {
     grid-template-columns: 1fr;
   }

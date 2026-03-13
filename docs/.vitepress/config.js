@@ -27,7 +27,26 @@ export default {
     ],
     
     // 侧边栏配置 - 只在指南页面显示
-    
+    sidebar: {
+      '/guide/': [
+        {
+          text: '指南',
+          items: [
+            { text: '介绍', link: '/guide/' },
+            { text: '快速开始', link: '/guide/getting-started' },
+            { text: '核心功能', link: '/guide/features' },
+            { text: '配置说明', link: '/guide/configuration' }
+          ]
+        },
+        {
+          text: '进阶',
+          items: [
+            { text: 'API集成', link: '/guide/integration' },
+            { text: '最佳实践', link: '/guide/best-practices' }
+          ]
+        }
+      ]
+    },
     
     // 社交链接
     socialLinks: [

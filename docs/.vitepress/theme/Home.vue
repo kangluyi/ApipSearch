@@ -10,7 +10,7 @@
         <span style="font-size: 0.9em; opacity: 0.7;">Flexible IP Geolocation Plugins with Multiple Data Sources</span>
       </p>
 
-      <div class="search-container">
+      <!--div class="search-container">
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="输入 IP 地址 (例如: 8.8.8.8) 或域名..." id="ipInput">
@@ -18,7 +18,7 @@
             <i class="fa-solid fa-bolt" style="margin-right: 0.5rem;"></i>查询
           </button>
         </div>
-      </div>
+      </div-->
     </section>
 
     <!-- 功能特性 -->

@@ -3,13 +3,7 @@
 
     <!-- 主视觉 -->
     <section class="hero">
-      <div class="hero-badge">
-        <span class="live-indicator">系统运行正常</span>
-        <span>|</span>
-        <span>v2.0 正式发布</span>
-      </div>
-
-      <h1>IP SEARCH</h1>
+      <h1>挨批IP查询</h1>
 
       <p class="hero-subtitle">
         专业IP查询插件 · 支持 <span class="highlight">多数据源集成</span> · 精准定位<br>
@@ -25,21 +19,6 @@
           </button>
         </div>
       </div>
-
-      <div class="live-stats">
-        <div class="stat-item">
-          <span class="stat-number" id="queryCount">2.5M+</span>
-          <span class="stat-label">日查询次数<br><span style="font-size: 0.7rem; opacity: 0.5;">Daily Queries</span></span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" id="responseTime">12<span style="font-size: 0.3em; color: var(--text-secondary);">ms</span></span>
-          <span class="stat-label">平均响应时间<br><span style="font-size: 0.7rem; opacity: 0.5;">Avg Response</span></span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" id="accuracy">99.9<span style="font-size: 0.3em; color: var(--text-secondary);">%</span></span>
-          <span class="stat-label">国家级别准确率<br><span style="font-size: 0.7rem; opacity: 0.5;">Accuracy Rate</span></span>
-        </div>
-      </div>
     </section>
 
     <!-- 功能特性 -->
@@ -52,26 +31,12 @@
       <div class="feature-grid">
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fa-solid fa-bolt"></i>
-          </div>
-          <span class="en-name">Lightning Fast</span>
-          <h3>毫秒级响应</h3>
-          <p>基于 Anycast 全球加速网络，平均响应时间低于 50ms。支持高并发查询，轻松应对百万级请求。</p>
-          <div class="feature-meta">
-            <span><i class="fa-solid fa-server"></i> 全球节点</span>
-            <span><i class="fa-solid fa-gauge-high"></i> 50ms SLA</span>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
             <i class="fa-solid fa-puzzle-piece"></i>
           </div>
           <span class="en-name">Easy Integration</span>
           <h3>简单集成</h3>
           <p>提供多种平台插件，支持一键安装配置。无需复杂编码，快速集成到您的应用或网站中。</p>
           <div class="feature-meta">
-            <span><i class="fa-solid fa-code"></i> 简单 API</span>
             <span><i class="fa-solid fa-plug"></i> 即插即用</span>
           </div>
         </div>
@@ -99,19 +64,6 @@
           <div class="feature-meta">
             <span><i class="fa-solid fa-wpforms"></i> WordPress</span>
             <span><i class="fa-solid fa-shopping-cart"></i> Shopify</span>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fa-solid fa-mask"></i>
-          </div>
-          <span class="en-name">Threat Detection</span>
-          <h3>威胁情报检测</h3>
-          <p>智能识别代理、VPN、Tor 节点及恶意 IP。集成实时威胁情报库，助力安全防护与欺诈检测。</p>
-          <div class="feature-meta">
-            <span><i class="fa-solid fa-user-shield"></i> VPN 检测</span>
-            <span><i class="fa-solid fa-ban"></i> 威胁拦截</span>
           </div>
         </div>
 
@@ -200,34 +152,12 @@
 
         <div class="data-card">
           <div class="data-icon">
-            <i class="fa-solid fa-users"></i>
-          </div>
-          <div class="data-info">
-            <h4>活跃用户</h4>
-            <span class="data-en">Active Users</span>
-            <div class="data-value">50K+ <small style="font-size: 0.5em; color: var(--text-secondary);">安装量</small></div>
-          </div>
-        </div>
-
-        <div class="data-card">
-          <div class="data-icon">
             <i class="fa-solid fa-database"></i>
           </div>
           <div class="data-info">
             <h4>多数据源支持</h4>
             <span class="data-en">Multiple Data Sources</span>
             <div class="data-value">10+ <small style="font-size: 0.5em; color: var(--text-secondary);">数据源</small></div>
-          </div>
-        </div>
-
-        <div class="data-card">
-          <div class="data-icon">
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="data-info">
-            <h4>用户评分</h4>
-            <span class="data-en">User Rating</span>
-            <div class="data-value">4.9/5 <small style="font-size: 0.5em; color: var(--text-secondary);">平均评分</small></div>
           </div>
         </div>
       </div>
@@ -261,37 +191,7 @@ const searchIP = () => {
   }, 800)
 }
 
-const animateValue = (id, start, end, duration) => {
-  const obj = document.getElementById(id)
-  const range = end - start
-  const minTimer = 50
-  let stepTime = Math.abs(Math.floor(duration / range))
-  stepTime = Math.max(stepTime, minTimer)
-  const startTime = new Date().getTime()
-  const endTime = startTime + duration
-  let timer
-
-  const run = () => {
-    const now = new Date().getTime()
-    const remaining = Math.max((endTime - now) / duration, 0)
-    const value = Math.round(end - (remaining * range))
-    obj.innerHTML = value + (id === 'accuracy' ? '<span style="font-size: 0.3em; color: var(--text-secondary);">%</span>' :
-      id === 'responseTime' ? '<span style="font-size: 0.3em; color: var(--text-secondary);">ms</span>' :
-        'M+')
-    if (value === end) {
-      clearInterval(timer)
-    }
-  }
-
-  timer = setInterval(run, stepTime)
-  run()
-}
-
 onMounted(() => {
-  animateValue("queryCount", 0, 2.5, 2000)
-  animateValue("responseTime", 0, 12, 1500)
-  animateValue("accuracy", 0, 99.9, 2000)
-
   document.getElementById('ipInput').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       searchIP()
@@ -485,35 +385,6 @@ body {
   background: var(--deep-red);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
-}
-
-/* 实时数据展示卡片 */
-.live-stats {
-  display: flex;
-  gap: 3rem;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-number {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 900;
-  color: var(--primary-red);
-  line-height: 1;
-  display: block;
-}
-
-.stat-label {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 0.5rem;
 }
 
 /* 功能特性区域 */

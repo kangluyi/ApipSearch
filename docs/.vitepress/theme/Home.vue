@@ -31,18 +31,6 @@
       <div class="feature-grid">
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fa-solid fa-puzzle-piece"></i>
-          </div>
-          <span class="en-name">Easy Integration</span>
-          <h3>简单集成</h3>
-          <p>提供多种平台插件，支持一键安装配置。无需复杂编码，快速集成到您的应用或网站中。</p>
-          <div class="feature-meta">
-            <span><i class="fa-solid fa-plug"></i> 即插即用</span>
-          </div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
             <i class="fa-solid fa-globe"></i>
           </div>
           <span class="en-name">Dual Stack</span>

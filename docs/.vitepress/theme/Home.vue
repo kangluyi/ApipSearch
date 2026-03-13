@@ -12,8 +12,8 @@
       <h1>IP SEARCH</h1>
 
       <p class="hero-subtitle">
-        专业IP查询插件 · 支持 <span class="highlight">多平台集成</span> · 精准定位<br>
-        <span style="font-size: 0.9em; opacity: 0.7;">Powerful IP Geolocation Plugins for Modern Applications</span>
+        专业IP查询插件 · 支持 <span class="highlight">多数据源集成</span> · 精准定位<br>
+        <span style="font-size: 0.9em; opacity: 0.7;">Flexible IP Geolocation Plugins with Multiple Data Sources</span>
       </p>
 
       <div class="search-container">
@@ -117,14 +117,14 @@
 
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fa-solid fa-cog"></i>
+            <i class="fa-solid fa-database"></i>
           </div>
-          <span class="en-name">Customizable</span>
-          <h3>高度可定制</h3>
-          <p>提供丰富的配置选项，支持自定义查询频率、数据展示方式和安全规则。满足不同场景的需求。</p>
+          <span class="en-name">Multiple Data Sources</span>
+          <h3>多数据源支持</h3>
+          <p>不自带数据，支持集成百度、高德等众多数据源。灵活切换数据源，满足不同场景的需求。</p>
           <div class="feature-meta">
-            <span><i class="fa-solid fa-sliders"></i> 灵活配置</span>
-            <span><i class="fa-solid fa-paint-brush"></i> 样式定制</span>
+            <span><i class="fa-solid fa-globe-asia"></i> 百度地图</span>
+            <span><i class="fa-solid fa-map-marked-alt"></i> 高德地图</span>
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
           <h2>插件集成<br>三步即可完成</h2>
           <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
             无需复杂的配置，通过简单的插件安装即可在您的应用或网站中集成 IP 查询功能。
-            支持多种平台，提供统一的用户体验和配置界面。
+            支持百度、高德等众多数据源，灵活切换，满足不同场景的需求。
           </p>
           <div style="margin-top: 2rem; display: flex; gap: 1rem;">
             <a href="#" style="padding: 0.875rem 1.5rem; background: var(--primary-red); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
@@ -158,10 +158,11 @@
             <span class="code-keyword">3.</span> 搜索 "IP Search"
             <span class="code-keyword">4.</span> 点击 "安装" 并激活
 
-            <span style="color: #666;">// 配置插件</span>
+            <span style="color: #666;">// 配置数据源</span>
             <span class="code-keyword">1.</span> 进入 IP Search 插件设置
-            <span class="code-keyword">2.</span> 配置查询频率和显示选项
-            <span class="code-keyword">3.</span> 保存设置并开始使用
+            <span class="code-keyword">2.</span> 选择数据源 (百度/高德等)
+            <span class="code-keyword">3.</span> 配置数据源 API 密钥
+            <span class="code-keyword">4.</span> 保存设置并开始使用
           </div>
         </div>
       </div>
@@ -205,6 +206,17 @@
             <h4>活跃用户</h4>
             <span class="data-en">Active Users</span>
             <div class="data-value">50K+ <small style="font-size: 0.5em; color: var(--text-secondary);">安装量</small></div>
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="data-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div class="data-info">
+            <h4>多数据源支持</h4>
+            <span class="data-en">Multiple Data Sources</span>
+            <div class="data-value">10+ <small style="font-size: 0.5em; color: var(--text-secondary);">数据源</small></div>
           </div>
         </div>
 

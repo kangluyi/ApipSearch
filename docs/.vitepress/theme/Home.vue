@@ -12,8 +12,8 @@
       <h1>IP SEARCH</h1>
 
       <p class="hero-subtitle">
-        毫秒级精准定位 · 支持 <span class="highlight">IPv4/IPv6</span> · 全球节点覆盖<br>
-        <span style="font-size: 0.9em; opacity: 0.7;">High-Performance IP Geolocation API for Modern Applications</span>
+        专业IP查询插件 · 支持 <span class="highlight">多平台集成</span> · 精准定位<br>
+        <span style="font-size: 0.9em; opacity: 0.7;">Powerful IP Geolocation Plugins for Modern Applications</span>
       </p>
 
       <div class="search-container">
@@ -46,7 +46,7 @@
     <section class="features" id="features">
       <div class="section-header">
         <span class="en-subtitle">Core Features</span>
-        <h2>核心能力</h2>
+        <h2>插件核心优势</h2>
       </div>
 
       <div class="feature-grid">
@@ -65,14 +65,14 @@
 
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fa-solid fa-shield-halved"></i>
+            <i class="fa-solid fa-puzzle-piece"></i>
           </div>
-          <span class="en-name">Privacy First</span>
-          <h3>隐私优先设计</h3>
-          <p>严格遵守无日志政策，不存储任何查询记录。支持 GDPR 合规，通过 HTTPS 加密传输确保数据安全。</p>
+          <span class="en-name">Easy Integration</span>
+          <h3>简单集成</h3>
+          <p>提供多种平台插件，支持一键安装配置。无需复杂编码，快速集成到您的应用或网站中。</p>
           <div class="feature-meta">
-            <span><i class="fa-solid fa-lock"></i> HTTPS Only</span>
-            <span><i class="fa-solid fa-user-secret"></i> No Logs</span>
+            <span><i class="fa-solid fa-code"></i> 简单 API</span>
+            <span><i class="fa-solid fa-plug"></i> 即插即用</span>
           </div>
         </div>
 
@@ -91,14 +91,14 @@
 
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-laptop"></i>
           </div>
-          <span class="en-name">Developer Friendly</span>
-          <h3>开发者友好</h3>
-          <p>RESTful API 设计，返回标准 JSON 格式。无需注册即可使用免费额度，提供多语言 SDK 支持。</p>
+          <span class="en-name">Multi-Platform</span>
+          <h3>多平台支持</h3>
+          <p>支持 WordPress、Shopify、Discord 等多种平台。提供统一的用户体验，无需担心平台差异。</p>
           <div class="feature-meta">
-            <span><i class="fa-solid fa-key"></i> 免注册</span>
-            <span><i class="fa-solid fa-laptop-code"></i> 多语言 SDK</span>
+            <span><i class="fa-solid fa-wpforms"></i> WordPress</span>
+            <span><i class="fa-solid fa-shopping-cart"></i> Shopify</span>
           </div>
         </div>
 
@@ -117,74 +117,67 @@
 
         <div class="feature-card">
           <div class="feature-icon">
-            <i class="fa-solid fa-coins"></i>
+            <i class="fa-solid fa-cog"></i>
           </div>
-          <span class="en-name">Free Tier</span>
-          <h3>免费额度充足</h3>
-          <p>每月 10,000 次免费查询额度，支持商业用途。无需信用卡，无自动续费，超出部分按量计费。</p>
+          <span class="en-name">Customizable</span>
+          <h3>高度可定制</h3>
+          <p>提供丰富的配置选项，支持自定义查询频率、数据展示方式和安全规则。满足不同场景的需求。</p>
           <div class="feature-meta">
-            <span><i class="fa-solid fa-gift"></i> 10K/月免费</span>
-            <span><i class="fa-solid fa-building"></i> 商用许可</span>
+            <span><i class="fa-solid fa-sliders"></i> 灵活配置</span>
+            <span><i class="fa-solid fa-paint-brush"></i> 样式定制</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- API演示 -->
-    <section class="api-demo" id="api">
+    <!-- 插件集成演示 -->
+    <section class="plugin-demo" id="integration">
       <div class="demo-container">
         <div class="demo-content">
           <span class="en-caption">Simple Integration</span>
-          <h2>极简集成<br>一行代码即可</h2>
+          <h2>插件集成<br>三步即可完成</h2>
           <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">
-            无需复杂的配置，通过简单的 HTTP GET 请求即可获取详细的 IP 地理位置信息。
-            支持字段筛选，只返回您需要的数据，减少带宽消耗。
+            无需复杂的配置，通过简单的插件安装即可在您的应用或网站中集成 IP 查询功能。
+            支持多种平台，提供统一的用户体验和配置界面。
           </p>
           <div style="margin-top: 2rem; display: flex; gap: 1rem;">
             <a href="#" style="padding: 0.875rem 1.5rem; background: var(--primary-red); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
-              <i class="fa-solid fa-book" style="margin-right: 0.5rem;"></i>查看文档
+              <i class="fa-solid fa-download" style="margin-right: 0.5rem;"></i>下载插件
             </a>
             <a href="#" style="padding: 0.875rem 1.5rem; border: 1px solid var(--border-red); color: var(--text-primary); text-decoration: none; border-radius: 8px; font-weight: 600;">
-              <i class="fa-brands fa-github" style="margin-right: 0.5rem;"></i>GitHub
+              <i class="fa-solid fa-book" style="margin-right: 0.5rem;"></i>使用文档
             </a>
           </div>
         </div>
 
         <div class="code-block">
           <div class="code-content">
-            <span class="code-keyword">curl</span> -X GET <span class="code-string">'https://api.apip.search/v1/lookup?ip=8.8.8.8'</span> \
-            -H <span class="code-string">'Accept: application/json'</span>
+            <span style="color: #666;">// WordPress 插件安装示例</span>
+            <span class="code-keyword">1.</span> 登录 WordPress 后台
+            <span class="code-keyword">2.</span> 插件 → 添加新插件
+            <span class="code-keyword">3.</span> 搜索 "IP Search"
+            <span class="code-keyword">4.</span> 点击 "安装" 并激活
 
-            <span style="color: #666;">// 返回结果</span>
-            {
-            <span class="code-string">"ip"</span>: <span class="code-string">"8.8.8.8"</span>,
-            <span class="code-string">"country"</span>: <span class="code-string">"美国"</span>,
-            <span class="code-string">"country_code"</span>: <span class="code-string">"US"</span>,
-            <span class="code-string">"region"</span>: <span class="code-string">"加利福尼亚"</span>,
-            <span class="code-string">"city"</span>: <span class="code-string">"山景城"</span>,
-            <span class="code-string">"isp"</span>: <span class="code-string">"Google LLC"</span>,
-            <span class="code-string">"lat"</span>: 37.386,
-            <span class="code-string">"lon"</span>: -122.0838,
-            <span class="code-string">"timezone"</span>: <span class="code-string">"America/Los_Angeles"</span>,
-            <span class="code-string">"is_proxy"</span>: false,
-            <span class="code-string">"is_vpn"</span>: false
-            }
+            <span style="color: #666;">// 配置插件</span>
+            <span class="code-keyword">1.</span> 进入 IP Search 插件设置
+            <span class="code-keyword">2.</span> 配置查询频率和显示选项
+            <span class="code-keyword">3.</span> 保存设置并开始使用
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 数据展示 - 卡片式 -->
+    <!-- 插件优势展示 - 卡片式 -->
     <section class="data-showcase" id="data">
       <div class="section-header">
-        <span class="en-subtitle">Data Coverage</span>
-        <h2>数据覆盖范围</h2>
+        <span class="en-subtitle">Plugin Advantages</span>
+        <h2>插件优势</h2>
       </div>
 
       <div class="data-cards">
         <div class="data-card">
           <div class="data-icon">
-            <i class="fa-solid fa-earth-asia"></i>
+            <i class="fa-solid fa-globe"></i>
           </div>
           <div class="data-info">
             <h4>全球覆盖</h4>
@@ -195,34 +188,34 @@
 
         <div class="data-card">
           <div class="data-icon">
-            <i class="fa-solid fa-city"></i>
+            <i class="fa-solid fa-laptop-code"></i>
           </div>
           <div class="data-info">
-            <h4>城市精度</h4>
-            <span class="data-en">City Level</span>
-            <div class="data-value">250万+ <small style="font-size: 0.5em; color: var(--text-secondary);">城市位置</small></div>
+            <h4>多平台支持</h4>
+            <span class="data-en">Multi-Platform</span>
+            <div class="data-value">10+ <small style="font-size: 0.5em; color: var(--text-secondary);">支持平台</small></div>
           </div>
         </div>
 
         <div class="data-card">
           <div class="data-icon">
-            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-users"></i>
           </div>
           <div class="data-info">
-            <h4>运营商数据</h4>
-            <span class="data-en">ISP Database</span>
-            <div class="data-value">8万+ <small style="font-size: 0.5em; color: var(--text-secondary);">运营商 ASN</small></div>
+            <h4>活跃用户</h4>
+            <span class="data-en">Active Users</span>
+            <div class="data-value">50K+ <small style="font-size: 0.5em; color: var(--text-secondary);">安装量</small></div>
           </div>
         </div>
 
         <div class="data-card">
           <div class="data-icon">
-            <i class="fa-solid fa-shield-virus"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
           <div class="data-info">
-            <h4>威胁情报</h4>
-            <span class="data-en">Threat Intel</span>
-            <div class="data-value">实时 <small style="font-size: 0.5em; color: var(--text-secondary);">更新频率</small></div>
+            <h4>用户评分</h4>
+            <span class="data-en">User Rating</span>
+            <div class="data-value">4.9/5 <small style="font-size: 0.5em; color: var(--text-secondary);">平均评分</small></div>
           </div>
         </div>
       </div>
@@ -627,8 +620,8 @@ body {
   gap: 0.25rem;
 }
 
-/* API演示区域 */
-.api-demo {
+/* 插件集成演示区域 */
+.plugin-demo {
   padding: 6rem 5%;
   background: linear-gradient(180deg, transparent 0%, rgba(220, 38, 38, 0.03) 50%, transparent 100%);
 }

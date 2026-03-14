@@ -190,7 +190,7 @@ onMounted(() => {
 
 <style scoped>
 /* 开源 REMIX ICON (MIT 协议)，使用国内 CDN 加速 */
-@import url('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/all.min.css');
+@import url('https://cdn.chenyande.com/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 * {
   margin: 0;

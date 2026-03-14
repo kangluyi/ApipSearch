@@ -199,15 +199,15 @@ onMounted(() => {
 }
 
 :root {
-  --primary-red: #DC2626;
-  --deep-red: #991B1B;
-  --light-red: #FEE2E2;
-  --accent-red: #EF4444;
+  --primary-blue: #718eaf;
+  --deep-blue: #5a7291;
+  --light-blue: #cfe0e3;
+  --accent-blue: #8aa3c2;
   --dark-bg: #0A0A0A;
-  --card-bg: rgba(220, 38, 38, 0.05);
+  --card-bg: rgba(113, 142, 175, 0.05);
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.6);
-  --border-red: rgba(220, 38, 38, 0.3);
+  --border-blue: rgba(113, 142, 175, 0.3);
 }
 
 @font-face {
@@ -273,11 +273,11 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1.25rem;
-  background: rgba(220, 38, 38, 0.1);
-  border: 1px solid var(--border-red);
+  background: rgba(113, 142, 175, 0.1);
+  border: 1px solid var(--border-blue);
   border-radius: 50px;
   font-size: 0.85rem;
-  color: var(--accent-red);
+  color: var(--accent-blue);
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -289,7 +289,7 @@ body {
   line-height: 0.9;
   text-align: center;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #FFFFFF 0%, rgba(220, 38, 38, 0.8) 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, rgba(113, 142, 175, 0.8) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -306,7 +306,7 @@ body {
 }
 
 .hero-subtitle .highlight {
-  color: var(--primary-red);
+  color: var(--primary-blue);
   font-weight: 600;
 }
 
@@ -322,7 +322,7 @@ body {
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.03);
-  border: 2px solid var(--border-red);
+  border: 2px solid var(--border-blue);
   border-radius: 16px;
   padding: 1.5rem 2rem;
   transition: all 0.3s;
@@ -330,14 +330,14 @@ body {
 }
 
 .search-box:focus-within {
-  border-color: var(--primary-red);
-  box-shadow: 0 0 40px rgba(220, 38, 38, 0.2);
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 40px rgba(113, 142, 175, 0.2);
   background: rgba(255, 255, 255, 0.05);
 }
 
 .search-box i {
   font-size: 1.5rem;
-  color: var(--primary-red);
+  color: var(--primary-blue);
   margin-right: 1rem;
 }
 
@@ -357,7 +357,7 @@ body {
 
 .search-btn {
   padding: 0.75rem 2rem;
-  background: var(--primary-red);
+  background: var(--primary-blue);
   color: white;
   border: none;
   border-radius: 8px;
@@ -370,9 +370,9 @@ body {
 }
 
 .search-btn:hover {
-  background: var(--deep-red);
+  background: var(--deep-blue);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 10px 30px rgba(113, 142, 175, 0.3);
 }
 
 /* 功能特性区域 */
@@ -395,7 +395,7 @@ body {
 
 .section-header .en-subtitle {
   font-size: 0.875rem;
-  color: var(--primary-red);
+  color: var(--primary-blue);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 600;
@@ -412,7 +412,7 @@ body {
 
 .feature-card {
   background: var(--card-bg);
-  border: 1px solid var(--border-red);
+  border: 1px solid var(--border-blue);
   border-radius: 20px;
   padding: 2.5rem;
   transition: all 0.4s;
@@ -427,15 +427,15 @@ body {
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-red), transparent);
+  background: linear-gradient(90deg, var(--primary-blue), transparent);
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(220, 38, 38, 0.6);
-  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.1);
+  border-color: rgba(113, 142, 175, 0.6);
+  box-shadow: 0 20px 40px rgba(113, 142, 175, 0.1);
 }
 
 .feature-card:hover::before {
@@ -445,15 +445,15 @@ body {
 .feature-icon {
   width: 60px;
   height: 60px;
-  background: rgba(220, 38, 38, 0.1);
+  background: rgba(113, 142, 175, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  color: var(--primary-red);
-  border: 1px solid var(--border-red);
+  color: var(--primary-blue);
+  border: 1px solid var(--border-blue);
 }
 
 .feature-card h3 {
@@ -482,7 +482,7 @@ body {
   gap: 1rem;
   margin-top: 1.5rem;
   font-size: 0.875rem;
-  color: var(--accent-red);
+  color: var(--accent-blue);
 }
 
 .feature-meta span {
@@ -494,7 +494,7 @@ body {
 /* 插件集成演示区域 */
 .plugin-demo {
   padding: 6rem 5%;
-  background: linear-gradient(180deg, transparent 0%, rgba(220, 38, 38, 0.03) 50%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(113, 142, 175, 0.03) 50%, transparent 100%);
 }
 
 .demo-container {
@@ -523,7 +523,7 @@ body {
 
 .code-block {
   background: #111;
-  border: 1px solid var(--border-red);
+  border: 1px solid var(--border-blue);
   border-radius: 12px;
   padding: 1.5rem;
   font-family: 'Courier New', monospace;
@@ -533,12 +533,12 @@ body {
 }
 
 .code-block::before {
-  content: 'curl';
+  content: '插件配置';
   position: absolute;
   top: 0;
   right: 0;
   padding: 0.5rem 1rem;
-  background: var(--primary-red);
+  background: var(--primary-blue);
   color: white;
   font-size: 0.75rem;
   border-bottom-left-radius: 8px;
@@ -551,7 +551,7 @@ body {
 }
 
 .code-keyword {
-  color: var(--primary-red);
+  color: var(--primary-blue);
 }
 
 .code-string {
@@ -583,19 +583,19 @@ body {
 }
 
 .data-card:hover {
-  border-color: var(--border-red);
+  border-color: var(--border-blue);
   background: var(--card-bg);
 }
 
 .data-icon {
   width: 48px;
   height: 48px;
-  background: rgba(220, 38, 38, 0.1);
+  background: rgba(113, 142, 175, 0.1);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-red);
+  color: var(--primary-blue);
   font-size: 1.25rem;
   flex-shrink: 0;
 }
@@ -617,7 +617,7 @@ body {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary-red);
+  color: var(--primary-blue);
 }
 
 

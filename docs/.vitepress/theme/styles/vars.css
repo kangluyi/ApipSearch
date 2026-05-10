@@ -1,17 +1,17 @@
 :root {
-  /* 红色主题 - 主色 */
-  --vp-c-brand-1: #e54e4e;
-  --vp-c-brand-2: #c13b3b;
-  --vp-c-brand-3: #a32b2b;
-  --vp-c-brand-soft: rgba(229, 78, 78, 0.14);
+  /* 蓝色主题 - 主色 */
+  --vp-c-brand-1: #718eaf;
+  --vp-c-brand-2: #5e7a96;
+  --vp-c-brand-3: #4a6680;
+  --vp-c-brand-soft: rgba(113, 142, 175, 0.14);
   
-  /* 红色主题 - 辅助色 */
-  --vp-c-brand-light: #f06a6a;
-  --vp-c-brand-lighter: #f9b3b3;
-  --vp-c-brand-dark: #b33b3b;
-  --vp-c-brand-darker: #8a2b2b;
+  /* 蓝色主题 - 辅助色 */
+  --vp-c-brand-light: #8aa3c2;
+  --vp-c-brand-lighter: #b3c4d9;
+  --vp-c-brand-dark: #5a7491;
+  --vp-c-brand-darker: #476281;
   
-  /* 自定义红色强调色 */
+  /* 自定义蓝色强调色 */
   --vp-custom-block-tip-border: var(--vp-c-brand-1);
   --vp-custom-block-tip-text: var(--vp-c-brand-darker);
   --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
@@ -37,15 +37,15 @@
   --vp-badge-info-bg: var(--vp-c-brand-soft);
 }
 
-/* 深色模式下的红色主题 */
+/* 深色模式下的蓝色主题 */
 .dark {
-  --vp-c-brand-1: #f06a6a;
-  --vp-c-brand-2: #e54e4e;
-  --vp-c-brand-3: #c13b3b;
-  --vp-c-brand-soft: rgba(240, 106, 106, 0.16);
+  --vp-c-brand-1: #8aa3c2;
+  --vp-c-brand-2: #718eaf;
+  --vp-c-brand-3: #5e7a96;
+  --vp-c-brand-soft: rgba(138, 163, 194, 0.16);
   
-  --vp-c-brand-light: #f9b3b3;
-  --vp-c-brand-lighter: #fcd7d7;
-  --vp-c-brand-dark: #c13b3b;
-  --vp-c-brand-darker: #a32b2b;
+  --vp-c-brand-light: #b3c4d9;
+  --vp-c-brand-lighter: #d6e2f0;
+  --vp-c-brand-dark: #5e7a96;
+  --vp-c-brand-darker: #4a6680;
 }

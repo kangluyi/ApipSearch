@@ -11,6 +11,11 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-inner">
+        <!-- Logo -->
+        <div class="hero-logo" data-animate="fade-up">
+          <img src="/logo.png" alt="ApipSearch Logo" />
+        </div>
+
         <div class="hero-badge" data-animate="fade-up">
           <i class="fa-solid fa-location-dot"></i>
           <span>Flexible IP Geolocation Plugin</span>
@@ -308,6 +313,25 @@ if (typeof window !== 'undefined') {
 .hero-inner {
   max-width: 900px;
   text-align: center;
+}
+
+.hero-logo {
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-logo.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
 }
 
 .hero-badge {

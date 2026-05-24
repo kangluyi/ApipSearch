@@ -7,6 +7,14 @@ export default {
   title: '挨批IP查询',
   description: 'Apipseach',
   
+  // 站点 URL，用于生成 sitemap
+  siteUrl: 'https://www.apipseach.com',
+  
+  // Head 标签配置
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png', type: 'image/png' }],
+  ],
+  
   // 主题配置
   themeConfig: {
     // 网站Logo

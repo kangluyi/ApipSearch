@@ -28,13 +28,13 @@ jobs:
         with:
           node-version: '20'
       
-      - name: 清理并重新安装依赖
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install
+      - name: Install dependencies
+        run: npm install
       
       - name: Build VitePress site
-        run: npm run docs:build
+        run: |
+          # 如果你没有 docs:build 脚本，直接运行 vitepress 命令
+          npx vitepress build docs
       
       - name: Add .nojekyll file
         run: touch docs/.vitepress/dist/.nojekyll

@@ -17,5 +17,10 @@
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0"
+  },
+  "dependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.62.2",
+    "greencandy": "^1.0.2",
+    "rollup": "^4.62.2"
   }
 }

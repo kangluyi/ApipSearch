@@ -4,11 +4,21 @@ export default {
   },
   
   // 基础配置
+  lang: 'zh-CN',
   title: '挨批IP查询',
   description: 'Apipseach',
   
   // 站点 URL，用于生成 sitemap
   siteUrl: 'https://www.apipseach.com',
+  
+  // 启用深色模式
+  appearance: true,
+  
+  // 最后更新时间
+  lastUpdated: true,
+  
+  // 清洁URL
+  cleanUrls: true,
   
   // Head 标签配置
   head: [
@@ -24,12 +34,11 @@ export default {
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' },
-      //{ text: 'API文档', link: '/api/' },
+      { text: '更新日志', link: '/changelog' },
       { 
         text: '更多', 
         items: [
-          { text: '关于我们', link: '/about/' },
-          { text: '更新日志', link: '/changelog' }
+          { text: '关于我们', link: '/about/' }
         ]
       }
     ],
@@ -56,6 +65,31 @@ export default {
       ]
     },
     
+    // 目录配置
+    outline: {
+      label: '本页目录',
+      level: [2, 3]
+    },
+    
+    // 搜索配置
+    search: {
+      provider: 'local',
+      options: {
+        detailedView: true
+      }
+    },
+    
+    // 文档页脚
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+    
+    // 最后更新时间
+    lastUpdated: {
+      text: '最后更新'
+    },
+    
     // 社交链接
     socialLinks: [
       { icon: 'github', link: 'https://github.com/your-repo/apipseach' }
@@ -65,11 +99,32 @@ export default {
     footer: {
       message: false,
       copyright: false
+    },
+    
+    // 绿沈之饴主题配置
+    colors: {
+      primary: '#16a34a',
+      primaryDark: '#15803d'
+    },
+    radius: 0.75,
+    shadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+    
+    // 不蒜子统计
+    busuanzi: {
+      enable: true,
+      rootDomain: 'busuanzi.ibruce.info',
+      sitePv: true,
+      siteUv: true,
+      pagePv: true
+    },
+    
+    // 外部链接跳转
+    externalRedirect: {
+      enable: true,
+      countdown: 5,
+      skipDomains: []
     }
   },
-  
-  // 自定义主题颜色 - 红色主题
-  appearance: true,  // 启用深色模式支持
   
   // 自定义CSS变量
   vite: {

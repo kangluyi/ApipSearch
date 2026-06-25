@@ -1,17 +1,17 @@
 :root {
-  /* 蓝色主题 - 主色 */
-  --vp-c-brand-1: #718eaf;
-  --vp-c-brand-2: #5e7a96;
-  --vp-c-brand-3: #4a6680;
-  --vp-c-brand-soft: rgba(113, 142, 175, 0.14);
+  /* 绿沈之饴主题 - 主色 */
+  --vp-c-brand-1: #16a34a;
+  --vp-c-brand-2: #15803d;
+  --vp-c-brand-3: #166534;
+  --vp-c-brand-soft: rgba(22, 163, 74, 0.14);
   
-  /* 蓝色主题 - 辅助色 */
-  --vp-c-brand-light: #8aa3c2;
-  --vp-c-brand-lighter: #b3c4d9;
-  --vp-c-brand-dark: #5a7491;
-  --vp-c-brand-darker: #476281;
+  /* 绿沈之饴主题 - 辅助色 */
+  --vp-c-brand-light: #22c55e;
+  --vp-c-brand-lighter: #4ade80;
+  --vp-c-brand-dark: #15803d;
+  --vp-c-brand-darker: #166534;
   
-  /* 自定义蓝色强调色 */
+  /* 自定义绿色强调色 */
   --vp-custom-block-tip-border: var(--vp-c-brand-1);
   --vp-custom-block-tip-text: var(--vp-c-brand-darker);
   --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
@@ -37,15 +37,15 @@
   --vp-badge-info-bg: var(--vp-c-brand-soft);
 }
 
-/* 深色模式下的蓝色主题 */
+/* 深色模式下的绿色主题 */
 .dark {
-  --vp-c-brand-1: #8aa3c2;
-  --vp-c-brand-2: #718eaf;
-  --vp-c-brand-3: #5e7a96;
-  --vp-c-brand-soft: rgba(138, 163, 194, 0.16);
+  --vp-c-brand-1: #22c55e;
+  --vp-c-brand-2: #16a34a;
+  --vp-c-brand-3: #15803d;
+  --vp-c-brand-soft: rgba(34, 197, 94, 0.16);
   
-  --vp-c-brand-light: #b3c4d9;
-  --vp-c-brand-lighter: #d6e2f0;
-  --vp-c-brand-dark: #5e7a96;
-  --vp-c-brand-darker: #4a6680;
+  --vp-c-brand-light: #4ade80;
+  --vp-c-brand-lighter: #86efac;
+  --vp-c-brand-dark: #16a34a;
+  --vp-c-brand-darker: #15803d;
 }

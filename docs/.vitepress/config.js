@@ -126,14 +126,5 @@ export default {
     }
   },
   
-  // 自定义CSS变量
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "./.vitepress/theme/styles/vars.css";`
-        }
-      }
-    }
-  }
+  vite: {}
 }

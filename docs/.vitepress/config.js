@@ -99,8 +99,8 @@ export default {
     
     // 绿沈之饴主题配置
     colors: {
-      primary: '#16a34a',
-      primaryDark: '#15803d'
+      primary: '#357575',
+      primaryDark: '#296060'
     },
     radius: 0.75,
     shadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',

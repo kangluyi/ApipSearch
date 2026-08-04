@@ -1,1 +1,255 @@
-/* Theme variables are managed by greencandy */
+/* Theme variables — teal palette derived from logo color #cce2e2 */
+
+/* ===== Light mode ===== */
+:root {
+  /* Brand shades (light/lighter not set by greencandy JS runtime) */
+  --vp-c-brand-light: #4a9494;
+  --vp-c-brand-lighter: #6db0b0;
+
+  /* Hero gradient */
+  --vp-home-hero-name-background: linear-gradient(120deg, #1a3a3a 15%, #357575 55%, #9ecaca);
+
+  /* Background tints */
+  --vp-c-bg: #fbfdfd;
+  --vp-c-bg-alt: #f2f8f8;
+  --vp-c-bg-elv: #ffffff;
+
+  /* greencandy custom tokens */
+  --gc-c-bg-soft: #f2f8f8;
+  --gc-c-bg-mute: #e8f3f3;
+  --gc-c-border-strong: rgba(41, 96, 96, 0.18);
+  --gc-card-bg: rgba(255, 255, 255, 0.82);
+  --gc-sidebar-bg: #f3f9f9;
+  --gc-sidebar-hover: rgba(74, 148, 148, 0.08);
+  --gc-sidebar-active: rgba(53, 117, 117, 0.14);
+  --gc-sidebar-active-text: #296060;
+}
+
+/* ===== Dark mode ===== */
+.dark {
+  --vp-c-brand-light: #6db0b0;
+  --vp-c-brand-lighter: #9ecaca;
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #cce2e2 15%, #6db0b0 55%, #357575);
+
+  --vp-c-bg: #071010;
+  --vp-c-bg-alt: #0b1818;
+  --vp-c-bg-elv: #0f2020;
+  --vp-c-divider: rgba(158, 202, 202, 0.12);
+
+  --gc-c-bg-soft: #0d1c1c;
+  --gc-c-bg-mute: #102222;
+  --gc-c-border: rgba(158, 202, 202, 0.13);
+  --gc-c-border-strong: rgba(109, 176, 176, 0.28);
+  --gc-card-bg: rgba(11, 24, 24, 0.82);
+  --gc-sidebar-bg: #081414;
+  --gc-sidebar-hover: rgba(109, 176, 176, 0.1);
+  --gc-sidebar-active: rgba(109, 176, 176, 0.16);
+  --gc-sidebar-active-text: #cce2e2;
+}
+
+/* ===== ExternalLinkRedirect component overrides ===== */
+/* greencandy hardcodes green values in scoped styles; override with !important */
+
+.external-link-redirect {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(74, 148, 148, 0.26), transparent 32%),
+    radial-gradient(circle at 82% 12%, rgba(53, 117, 117, 0.18), transparent 30%),
+    linear-gradient(145deg, #f0f8f8 0%, #fbfdfd 48%, #e8f3f3 100%) !important;
+}
+
+.external-link-redirect::before {
+  background-image:
+    linear-gradient(rgba(41, 96, 96, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(41, 96, 96, 0.06) 1px, transparent 1px) !important;
+}
+
+.redirect-container {
+  border-color: rgba(41, 96, 96, 0.14) !important;
+}
+
+.redirect-container::after {
+  background: rgba(74, 148, 148, 0.14) !important;
+}
+
+.redirect-badge {
+  border-color: rgba(41, 96, 96, 0.14) !important;
+  background: rgba(232, 243, 243, 0.9) !important;
+  color: #296060 !important;
+}
+
+.redirect-badge__dot {
+  background: #4a9494 !important;
+  box-shadow: 0 0 0 5px rgba(74, 148, 148, 0.14) !important;
+}
+
+.redirect-icon {
+  border-color: rgba(53, 117, 117, 0.24) !important;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(204, 226, 226, 0.74)),
+    #e8f3f3 !important;
+  color: #357575 !important;
+  box-shadow: 0 12px 26px rgba(53, 117, 117, 0.16) !important;
+}
+
+.redirect-eyebrow {
+  color: #357575 !important;
+}
+
+.redirect-title {
+  color: #0f2020 !important;
+}
+
+.redirect-description {
+  color: #4a6363 !important;
+}
+
+.redirect-destination {
+  border-color: rgba(41, 96, 96, 0.12) !important;
+  background:
+    linear-gradient(180deg, rgba(240, 248, 248, 0.9), rgba(255, 255, 255, 0.78)),
+    rgba(255, 255, 255, 0.72) !important;
+}
+
+.destination-label {
+  color: #5a7575 !important;
+}
+
+.destination-host {
+  color: #0f2020 !important;
+}
+
+.destination-url {
+  border-color: rgba(41, 96, 96, 0.1) !important;
+  color: #4a6363 !important;
+}
+
+.redirect-meta {
+  color: #5a7575 !important;
+}
+
+.countdown-pill {
+  background: rgba(53, 117, 117, 0.1) !important;
+  color: #296060 !important;
+}
+
+.btn-cancel {
+  border-color: rgba(41, 96, 96, 0.14) !important;
+  color: #244040 !important;
+}
+
+.btn-cancel:hover {
+  border-color: rgba(41, 96, 96, 0.22) !important;
+}
+
+.btn-continue {
+  background: linear-gradient(135deg, #357575, #296060) !important;
+  box-shadow: 0 12px 24px rgba(53, 117, 117, 0.26) !important;
+}
+
+.btn-continue:hover {
+  box-shadow: 0 16px 30px rgba(53, 117, 117, 0.32) !important;
+}
+
+.btn-cancel:focus-visible,
+.btn-continue:focus-visible {
+  outline-color: rgba(74, 148, 148, 0.28) !important;
+}
+
+.remember-choice {
+  color: #5a7575 !important;
+}
+
+.remember-choice input[type="checkbox"] {
+  accent-color: #357575 !important;
+}
+
+/* ===== ExternalLinkRedirect dark mode overrides ===== */
+.dark .external-link-redirect {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(109, 176, 176, 0.16), transparent 34%),
+    radial-gradient(circle at 84% 10%, rgba(53, 117, 117, 0.12), transparent 32%),
+    linear-gradient(145deg, #071010 0%, #0b1818 52%, #0f2020 100%) !important;
+}
+
+.dark .external-link-redirect::before {
+  background-image:
+    linear-gradient(rgba(158, 202, 202, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(158, 202, 202, 0.07) 1px, transparent 1px) !important;
+}
+
+.dark .redirect-container {
+  border-color: rgba(158, 202, 202, 0.14) !important;
+  background: rgba(8, 20, 20, 0.86) !important;
+}
+
+.dark .redirect-badge {
+  border-color: rgba(109, 176, 176, 0.2) !important;
+  background: rgba(41, 96, 96, 0.24) !important;
+  color: #cce2e2 !important;
+}
+
+.dark .redirect-icon {
+  border-color: rgba(109, 176, 176, 0.28) !important;
+  background:
+    linear-gradient(145deg, rgba(41, 96, 96, 0.42), rgba(6, 60, 60, 0.24)),
+    #102222 !important;
+  color: #9ecaca !important;
+}
+
+.dark .redirect-eyebrow {
+  color: #9ecaca !important;
+}
+
+.dark .redirect-title {
+  color: #f4fafa !important;
+}
+
+.dark .redirect-description {
+  color: #9ecaca !important;
+}
+
+.dark .redirect-destination {
+  border-color: rgba(158, 202, 202, 0.12) !important;
+  background:
+    linear-gradient(180deg, rgba(15, 32, 32, 0.9), rgba(8, 20, 20, 0.74)),
+    rgba(8, 20, 20, 0.72) !important;
+}
+
+.dark .destination-label {
+  color: #9ecaca !important;
+}
+
+.dark .destination-host {
+  color: #f0fafa !important;
+}
+
+.dark .destination-url {
+  border-color: rgba(158, 202, 202, 0.1) !important;
+  background: rgba(4, 12, 12, 0.46) !important;
+  color: #9ecaca !important;
+}
+
+.dark .redirect-meta {
+  color: #9ecaca !important;
+}
+
+.dark .countdown-pill {
+  background: rgba(109, 176, 176, 0.13) !important;
+  color: #cce2e2 !important;
+}
+
+.dark .btn-cancel {
+  border-color: rgba(158, 202, 202, 0.14) !important;
+  color: #d0e8e8 !important;
+}
+
+.dark .btn-continue {
+  color: #041010 !important;
+  background: linear-gradient(135deg, #9ecaca, #6db0b0) !important;
+  box-shadow: 0 14px 28px rgba(109, 176, 176, 0.18) !important;
+}
+
+.dark .remember-choice {
+  color: #9ecaca !important;
+}

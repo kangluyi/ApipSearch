@@ -364,17 +364,17 @@ onMounted(() => {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 18% 18%, rgba(22, 163, 74, 0.16) 0%, transparent 42%),
-    radial-gradient(ellipse at 82% 12%, rgba(134, 239, 172, 0.18) 0%, transparent 38%),
-    radial-gradient(ellipse at 50% 100%, rgba(22, 163, 74, 0.1) 0%, transparent 48%);
+    radial-gradient(ellipse at 18% 18%, rgba(53, 117, 117, 0.16) 0%, transparent 42%),
+    radial-gradient(ellipse at 82% 12%, rgba(158, 202, 202, 0.18) 0%, transparent 38%),
+    radial-gradient(ellipse at 50% 100%, rgba(53, 117, 117, 0.1) 0%, transparent 48%);
 }
 
 .grid-bg {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(22, 163, 74, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(22, 163, 74, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(53, 117, 117, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53, 117, 117, 0.08) 1px, transparent 1px);
   background-size: 72px 72px;
   -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent 68%);
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), transparent 68%);
@@ -577,13 +577,13 @@ onMounted(() => {
 .hero-actions .vp-button.brand {
   border-color: rgba(255, 255, 255, 0.22);
   box-shadow:
-    0 10px 30px rgba(22, 163, 74, 0.28),
+    0 10px 30px rgba(53, 117, 117, 0.28),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .hero-actions .vp-button.alt {
   background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(74, 222, 128, 0.28);
+  border-color: rgba(109, 176, 176, 0.28);
   box-shadow:
     0 8px 24px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
@@ -591,22 +591,22 @@ onMounted(() => {
 
 .hero-actions .vp-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(22, 163, 74, 0.24);
+  box-shadow: 0 12px 32px rgba(53, 117, 117, 0.24);
 }
 
 .hero-actions .vp-button.brand:hover {
   border-color: rgba(255, 255, 255, 0.34);
   box-shadow:
-    0 14px 36px rgba(22, 163, 74, 0.32),
+    0 14px 36px rgba(53, 117, 117, 0.32),
     inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 
 .hero-actions .vp-button.alt:hover {
   background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(74, 222, 128, 0.44);
+  border-color: rgba(109, 176, 176, 0.44);
   box-shadow:
     0 12px 30px rgba(0, 0, 0, 0.16),
-    0 0 0 1px rgba(74, 222, 128, 0.12);
+    0 0 0 1px rgba(109, 176, 176, 0.12);
 }
 
 /* Stats */
@@ -647,7 +647,7 @@ onMounted(() => {
 .stat-item:hover {
   transform: translateY(-4px);
   border-color: var(--vp-c-brand-soft);
-  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.15);
+  box-shadow: 0 10px 30px rgba(53, 117, 117, 0.15);
 }
 
 .stat-number {
@@ -696,7 +696,7 @@ onMounted(() => {
 .lookup-card {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(74, 222, 128, 0.26);
+  border: 1px solid rgba(109, 176, 176, 0.26);
   border-radius: 32px;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.04)),
@@ -712,7 +712,7 @@ onMounted(() => {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(22, 163, 74, 0.18), transparent 45%);
+  background: linear-gradient(120deg, rgba(53, 117, 117, 0.18), transparent 45%);
   pointer-events: none;
 }
 
@@ -752,10 +752,10 @@ onMounted(() => {
   align-items: center;
   gap: 0.45rem;
   padding: 0.45rem 0.7rem;
-  border: 1px solid rgba(34, 197, 94, 0.28);
+  border: 1px solid rgba(74, 148, 148, 0.28);
   border-radius: 999px;
-  background: rgba(34, 197, 94, 0.1);
-  color: #16a34a;
+  background: rgba(74, 148, 148, 0.1);
+  color: #357575;
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -764,8 +764,8 @@ onMounted(() => {
   width: 8px;
   height: 8px;
   border-radius: 999px;
-  background: #22c55e;
-  box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.12);
+  background: #4a9494;
+  box-shadow: 0 0 0 5px rgba(74, 148, 148, 0.12);
 }
 
 .query-block {
@@ -773,7 +773,7 @@ onMounted(() => {
   gap: 0.55rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  border: 1px solid rgba(74, 222, 128, 0.18);
+  border: 1px solid rgba(109, 176, 176, 0.18);
   border-radius: 18px;
   background: rgba(15, 23, 42, 0.06);
 }
@@ -955,7 +955,7 @@ onMounted(() => {
 .feature-card:hover {
   transform: translateY(-8px);
   border-color: var(--vp-c-brand-soft);
-  box-shadow: 0 20px 50px rgba(22, 163, 74, 0.2);
+  box-shadow: 0 20px 50px rgba(53, 117, 117, 0.2);
 }
 
 .feature-card:hover .feature-glow {
@@ -971,7 +971,7 @@ onMounted(() => {
   inset: 0;
   background: radial-gradient(
     circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(22, 163, 74, 0.15) 0%,
+    rgba(53, 117, 117, 0.15) 0%,
     transparent 50%
   );
   opacity: 0;
@@ -1043,7 +1043,7 @@ onMounted(() => {
 }
 
 .feature-card:hover .tag {
-  background: rgba(22, 163, 74, 0.2);
+  background: rgba(53, 117, 117, 0.2);
 }
 
 /* Scenarios */
@@ -1086,7 +1086,7 @@ onMounted(() => {
 .scenario-card:hover {
   transform: translateY(-6px);
   border-color: var(--vp-c-brand-soft);
-  box-shadow: 0 18px 48px rgba(22, 163, 74, 0.16);
+  box-shadow: 0 18px 48px rgba(53, 117, 117, 0.16);
 }
 
 .scenario-icon {

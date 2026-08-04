@@ -1,15 +1,11 @@
 export default {
-  build: {
-    outDir: '../../html'
-  },
-  
   // 基础配置
   lang: 'zh-CN',
   title: '挨批IP查询',
   description: 'Apipseach',
   
   // 站点 URL，用于生成 sitemap
-  siteUrl: 'https://www.apipseach.com',
+  siteUrl: 'https://apip.moruteaven.com',
   
   // 启用深色模式
   appearance: true,
@@ -92,7 +88,7 @@ export default {
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-repo/apipseach' }
+      { icon: 'github', link: 'https://github.com/MoruTeaven/ApipSearch-docs' }
     ],
     
     // 页脚

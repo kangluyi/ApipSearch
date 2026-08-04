@@ -3,25 +3,25 @@
     <template #footer>
       <footer class="footer">
         <div class="footer-content">
-          <p class="footer-copyright">
-            Copyright © 2025 - {{ currentYear }}
-            <a 
-              href="https://www.moruteaven.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="author-link"
-            >
-              抹露茶柒
-            </a>
-          </p>
           <p class="footer-icp">
-            <a 
-              href="https://beian.miit.gov.cn/" 
+            <a
+              href="https://beian.miit.gov.cn/"
               target="_blank" 
               rel="noopener noreferrer"
               class="icp-link"
             >
               鲁ICP备2026008616号-2
+            </a>
+          </p>
+          <p class="footer-copyright">
+            Copyright © 2025-2026
+            <a
+              href="https://moruteaven.com/"
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="author-link"
+            >
+              抹露茶柒
             </a>
           </p>
         </div>
@@ -31,10 +31,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-
-const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <style scoped>
@@ -56,6 +53,7 @@ const currentYear = computed(() => new Date().getFullYear())
 }
 
 .footer-copyright {
+  margin: 0;
   color: var(--vp-c-text-2);
   font-size: 14px;
   display: flex;
@@ -79,7 +77,7 @@ const currentYear = computed(() => new Date().getFullYear())
 }
 
 .footer-icp {
-  margin-top: 4px;
+  margin: 0;
 }
 
 .icp-link {
